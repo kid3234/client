@@ -2,37 +2,98 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ldiv{
+  width: 400px;
+  height: 700px;
+  background-color: rgb(111, 111, 111);
+  margin:8cqh auto;
+  border-radius: 20px;
+  padding-top: 50px;
+  padding: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rap{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+  align-self: center;
+ 
+}
+.ldiv h1{
+  color: white;
+  margin-bottom: 40px;
+}
+.inp{
+  width :75%;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+
+}
+form{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+gap: 20px;
+}
+
+.lbtn{
+   padding: 15px 10px;
+   border-radius: 10px;
+   border: none;
+   width: 75%;
+   cursor: pointer;
+   align-self:flex-start;
+}
+p{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
 }
