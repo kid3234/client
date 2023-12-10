@@ -28,7 +28,11 @@ function Login() {
       .then(res => {
         setPwd('');
         setUser('');
-        console.log(res);
+        console.log(res.data);
+        
+        localStorage.setItem('token',res.data.token)
+        localStorage.setItem('id',res.data.id)
+       
         window.location.replace('/home')
       }).catch(err => {
         console.log(err.response);

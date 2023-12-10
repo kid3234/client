@@ -6,13 +6,17 @@ import Home from './components/Home';
 import Nopage from './components/Nopage';
 
 function App() {
+
+
+const token = localStorage.getItem('token')
+
   return (
 
     <div className="App">
       <Routes>
         <Route path='/' element={<Signup />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/home' element={<Home />} />
+        <Route path='/home' element={token !== null ? <Home />:<Nopage/>} />
         <Route path='*' element={<Nopage />} />
       </Routes>
     </div>
